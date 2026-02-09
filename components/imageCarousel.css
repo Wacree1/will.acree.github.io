@@ -1,0 +1,103 @@
+.carousel-container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.carousel-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 91, 179, 0.95);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+  left: 15px;
+}
+
+.carousel-next {
+  right: 15px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: 2px solid #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.indicator.active {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background-color: #b3d9ff;
+}
+
+@media (max-width: 768px) {
+  .carousel-main {
+    max-height: 350px;
+  }
+
+  .carousel-image {
+    max-height: 350px;
+  }
+
+  .carousel-button {
+    font-size: 1.4rem;
+    padding: 10px 14px;
+  }
+
+  .carousel-prev {
+    left: 10px;
+  }
+
+  .carousel-next {
+    right: 10px;
+  }
+}
