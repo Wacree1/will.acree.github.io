@@ -20,7 +20,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: [ isDev && require.resolve("react-refresh/babel")
+            plugins: [isDev && require.resolve("react-refresh/babel")
     ].filter(Boolean),
           },
         },
@@ -42,7 +42,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    nisDev && new ReactRefreshWebpackPlugin(),
+    isDev && new ReactRefreshWebpackPlugin(),
 ].filter(Boolean),
   devServer: {
     port: 3000,
