@@ -21,10 +21,13 @@ function NavBar({ setCurrentPage }) {
           <a className="nav-link active" aria-current="page" href="#" onMouseEnter={() => setHoveredItem('home')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'home' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('home')}>Home</a>
         </li>
         <li className="nav-item ms-5">
-          <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('projects')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'projects' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('projects')}>Projects</a>
+          <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('skills')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'skills' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('skills')}>Education</a>
         </li>
         <li className="nav-item ms-5">
-          <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('skills')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'skills' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('skills')}>Skills/Education</a>
+          <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('workExperience')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'workExperience' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('workExperience')}>Work Experience</a>
+        </li>
+        <li className="nav-item ms-5">
+          <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('projects')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'projects' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('projects')}>Projects</a>
         </li>
          <li className="nav-item ms-5">
           <a className="nav-link" href="#" onMouseEnter={() => setHoveredItem('interests')} onMouseLeave={() => setHoveredItem(null)} style={{backgroundColor: hoveredItem === 'interests' ? 'grey' : 'transparent'}} onClick={() => setCurrentPage('interests')}>Interests/Involvement</a>

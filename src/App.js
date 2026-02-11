@@ -3,6 +3,7 @@ import NavBar from '../components/nav_bar.jsx';
 import Home from '../components/home.jsx';
 import Projects from '../components/projects.jsx';
 import Skills from '../components/skills.jsx';
+import WorkExperience from '../components/workExperience.jsx';
 import Contact from '../components/contact.jsx';
 import Interests from '../components/interests.jsx';
 
@@ -18,6 +19,8 @@ function App() {
       setCurrentPage('projects');
     } else if (path === '/skills') {
       setCurrentPage('skills');
+    } else if (path === '/workExperience') {
+      setCurrentPage('workExperience');
     } else if (path === '/contact') {
       setCurrentPage('contact');
     } else if (path === '/interests') {
@@ -34,6 +37,7 @@ function App() {
     if (path === '/' || path === '/home') setCurrentPage('home');
     else if (path === '/projects') setCurrentPage('projects');
     else if (path === '/skills') setCurrentPage('skills');
+    else if (path === '/workExperience') setCurrentPage('workExperience');
     else if (path === '/contact') setCurrentPage('contact');
     else if (path === '/interests') setCurrentPage('interests');
   };
@@ -51,6 +55,8 @@ function App() {
         return <Projects />;
       case 'skills':
         return <Skills setCurrentPage={handlePageChange} />;
+      case 'workExperience':
+        return <WorkExperience setCurrentPage={handlePageChange} />;
       case 'contact':
         return <Contact />;
       case 'interests':
